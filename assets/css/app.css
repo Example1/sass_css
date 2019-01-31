@@ -1,0 +1,53 @@
+body {
+  background: yellow;
+  color: #333;
+  font-family: "Andale Mono", monospace;
+  font-size: 12px;
+}
+
+article {
+  background: white;
+  width: 760px;
+  margin: -60px auto 0;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: -2;
+}
+
+header {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  line-height: 250px;
+  text-align: center;
+  background: red;
+  color: white;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 14px;
+}
+
+footer {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
+  text-align: center;
+  background: blue;
+  color: white;
+  margin: 0 auto;
+  font-size: 10px;
+  margin-top: -60px;
+  position: relative;
+  z-index: -4;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,64 @@
+// Variables
+
+$black: #333
+$blue: blue
+$red: red
+$yellow: yellow
+
+
+$font-stack: 'Andale Mono', monospace
+$font-size: 12px
+
+
+// Mixins
+
+=circle($rad, $height, $width, $bg, $color)
+	-webkit-border-radius:	$rad
+	-moz-border-radius:		$rad
+	-ms-border-radius:		$rad
+	border-radius:			$rad
+
+	height:	$height
+	width:	$width
+
+	line-height: $height
+	text-align: center
+
+	background: $bg
+	color: $color
+
+	margin:0 auto
+
+
+
+// Styles
+
+body
+	background: $yellow
+	color: $black
+	font-family: $font-stack
+	font-size: $font-size
+
+article
+	background: white
+	width: 760px
+	margin: -60px auto 0
+	padding: 40px
+	box-sizing: border-box
+	position: relative
+	z-index: -2
+
+header
+	+circle(50%, 250px, 250px, $red, white)
+
+	h1
+		font-size: $font-size + 2
+
+
+footer
+	+circle(50%, 150px, 150px, $blue, white)
+	font-size: $font-size - 2
+	margin-top:-60px
+	position: relative
+	z-index: -4
+		
